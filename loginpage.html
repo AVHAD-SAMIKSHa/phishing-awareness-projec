@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Account Security Verification</title>
+
+<style>
+
+body{
+font-family: Arial;
+background: linear-gradient(120deg,#2980b9,#6dd5fa,#ffffff);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.box{
+background:white;
+padding:30px;
+width:350px;
+border-radius:10px;
+box-shadow:0px 0px 20px rgba(0,0,0,0.3);
+text-align:center;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+input{
+width:90%;
+padding:12px;
+margin:10px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+button{
+width:95%;
+padding:12px;
+background:#007BFF;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0056b3;
+}
+
+.message{
+color:red;
+font-size:14px;
+display:none;
+}
+
+.note{
+margin-top:15px;
+font-size:12px;
+color:red;
+}
+
+a{
+font-size:13px;
+text-decoration:none;
+}
+
+</style>
+
+<script>
+
+function validateLogin(){
+
+var email=document.getElementById("email").value;
+var password=document.getElementById("password").value;
+
+if(email=="" || password==""){
+
+document.getElementById("msg").style.display="block";
+document.getElementById("msg").innerHTML="Please fill all fields";
+
+return false;
+
+}
+
+alert("Verification Failed! Redirecting to security survey.");
+
+window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSdPMDJFhaAzJWwbV3IV1af5B7ajsSgFquo4xcfjnsKjaU-bqQ/viewform?usp=publish-editor";
+
+return false;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Account Verification</h2>
+
+<form onsubmit="return validateLogin()">
+
+<input type="email" id="email" placeholder="Enter Email">
+
+<input type="password" id="password" placeholder="Enter Password">
+
+<button type="submit">Login</button>
+
+<p id="msg" class="message"></p>
+
+<br>
+
+<a href="#">Forgot Password?</a>
+
+<p class="note">
+Cybersecurity Awareness Simulation – Do not enter real passwords
+</p>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
