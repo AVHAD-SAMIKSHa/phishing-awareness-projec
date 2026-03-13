@@ -1,0 +1,17 @@
+Urgent: Account Security Verification Required
+
+Dear User,
+
+We detected unusual login activity in your account from an unknown device.
+
+For security reasons, you must verify your account immediately to avoid temporary suspension.
+
+Please click the link below and login to confirm your identity:
+
+https://avhad-samiksha.github.io/phishing-awareness-projec/
+If you do not verify within 24 hours, your account may be restricted for security purposes.
+
+Thank you for your cooperation.
+
+IT Security Team
+Account Protection Department
